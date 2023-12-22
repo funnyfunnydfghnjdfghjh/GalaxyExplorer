@@ -1,0 +1,23 @@
+body {
+  background-image: url("https://e0.pxfuel.com/wallpapers/997/724/desktop-wallpaper-starry-sky-27484-px-cartoon-night-sky.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 900px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: lightseagreen;
+font-size: 100px;
+  text-align: center;
+}
+
+h5 {
+  color:azure;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+}
