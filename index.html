@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Explorer</title>
+
+  <!-- Start of Navigation Bar -->
+  <nav>
+      <a href="index.html">Game</a>
+      <a href="achievements.html">Achievements</a>    
+    <a href="services.html">Services</a>
+    
+  </nav>
+  <!-- End of Navigation Bar -->
+  
+  <button onclick="howTo()" class="HowTo">
+    <hp>Tutorial</hp>
+  </button>
+  <br>
+  <br>
+  <h_0 id="demo2"></h_0>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>🎄Galaxy <h_11>Explorer🎄</h_11>
+  </h1>
+  <h190>Merry <h191>Christmas!</h191>
+  </h190>
+
+  <style>
+    h_8 {
+      color: tomato;
+      font-family: arial;
+    }
+
+    /* Start of Navigation Bar Styling */
+    nav {
+        overflow: hidden;
+    }
+
+    nav a {
+        float: left;
+        display: block;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        background-image: url("https://e0.pxfuel.com/wallpapers/997/724/desktop-wallpaper-starry-sky-27484-px-cartoon-night-sky.jpg");
+        color: azure;
+    }
+    
+    h190 {
+      color: red;
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+      text-align: center;
+    }
+
+    h191 {
+      color: green;
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+      text-align: center;
+    }
+
+    h_0 {
+      color: dodgerblue;
+      font-size: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      color: mediumseagreen;
+      font-family: verdana;
+      text-align: center;
+      font-size: 55px;
+    }
+
+    h_11 {
+      color: tomato;
+      font-family: Verdana;
+      text-align: center;
+      font-size: 55px;
+    }
+
+    h3 {
+      color: peachpuff;
+      font-family: courier;
+      text-align: center;
+    }
+
+    h8 {
+      color: darkslategrey;
+      font-family: verdana;
+      display: left;
+    }
+
+    h7 {
+      color: lightseagreen;
+      font-family: verdana;
+      text-align: center;
+    }
+
+    hp {
+      color: darkseagreen;
+      font-family: courier;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    p {
+      color: lightseagreen;
+      font-family: courier;
+      text-align: center;
+    }
+
+    p_1 {
+      color: violet;
+      font-family: verdana;
+      font-size: 10px;
+    }
+
+    p_2 {
+      color: lightseagreen;
+      font-family: courier;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    body {
+      background-image: url(https://e0.pxfuel.com/wallpapers/997/724/desktop-wallpaper-starry-sky-27484-px-cartoon-night-sky.jpg);
+      color: lightseagreen;
+      font-family: courier;
+    }
+
+    #clicker-container {
+      margin: 100px auto;
+      padding: 40px;
+      border: 4px solid blue;
+      border-radius: 360px 360px;
+      width: 300px;
+      text-align: center;
+    }
+
+    #clicker-count {
+      font-size: 30px;
+      color: lightblue;
+      font-family: verdana;
+    }
+
+    #click-button {
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 18px;
+      cursor: pointer;
+      background-image: linear-gradient(darkblue, darkslategrey);
+      color: #fff;
+      border: none;
+      border-radius: 360px 180px;
+      color: cornsilk;
+      font-family: courier;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup2 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup3 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup4 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup5 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup6 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup7 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup8 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup9 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup10 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup11 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup12 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup13 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup14 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup15 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup16 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup17 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup18 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup19 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .popup20 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(darkblue, darkslategrey);
+      ;
+      padding: 40px;
+      border-radius: 360px;
+      border: 8px solid lightseagreen;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .HowTo {
+      padding: auto;
+      background-image: radial-gradient(dodgerblue, navy, darkslategrey);
+      border: 3px, solid lightseagreen;
+      border-radius: 340px 50px;
+      color: lightseagreen;
+      font-size: 13px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="clicker-container">
+    <p>Galaxies explored <span id="clicker-count"></span></p>
+    <button onclick="incrementCounter()" id="click-button">9.9 billion light years</button>
+  </div>
+
+  <p_1>/<span id="clickCount"></span>/</p_1>
+
+  <!-- Pop-up box -->
+  <div id="popup" class="popup">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7><b>Endgame:</b><br>Congratulations! You've reached the edge of the observable universe</h7>
+    <br>
+      <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/zlQM25wCG61IDgIXV4py/zlQM25wCG61IDgIXV4py--1--30in8.jpg?tr=w-384,c-at_max"
+      width="200px" length="200px">
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup2" class="popup2">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7><b>Super Black Hole:</b><br>You've reached the largest black hole in the universe!</h7>
+    <br>
+      <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/qRTm9GBrn8mw7mwbbeyJ/qRTm9GBrn8mw7mwbbeyJ--1--7tlck.jpg?tr=w-1600,c-at_max"
+      width="200px" length="200px">
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup3" class="popup3">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7><b>You're a Star:</b><br>You've reached one of the largest stars in the observable universe! The UY Scuti</h7>
+    <br>
+      <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/BlWjezIRlkAoS9c1QaNY/BlWjezIRlkAoS9c1QaNY--1--zzs52.jpg?tr=w-1600,c-at_max"
+      width="200px" length="200px">
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup4" class="popup4">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>Junior Explorer Badge I:<br>100 clicks, wow that's wild</h7>
+    </p>
+    <br>
+    <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/G292aKQtR6hNq4aYY1Qk/G292aKQtR6hNq4aYY1Qk--1--qaqrj.jpg?tr=w-384,c-at_max"
+      width="200px" length="200px">
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup5" class="popup5">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>Welcome to a Galaxy Far, Far Away</h7>
+    </p>
+    <br>
+    <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/7SOtVvJJQYis9gQP6La3/7SOtVvJJQYis9gQP6La3--1--a64ya.jpg?tr=w-1600,c-at_max"
+      width="200px" length="200px">
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup6" class="popup6">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>Junior Explorer Badge II:<br>1000 clicks. Push yourself, because no one else is going to do it for you. -<b><i>
+          i forget</i></b></h7>
+    </p>
+    <br>
+    <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/Tj1JkGZ4kjyLlBXdvk6l/Tj1JkGZ4kjyLlBXdvk6l--1--j8ddc.jpg?tr=w-384,c-at_max"
+      width="200px" length="200px">
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup7" class="popup7">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7><b>Cluster I:</b><br>1500 clicks<br>You've reached The Hyades Star Cluster!</i></h7>
+    <br>
+      <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/eyW6lEBgrWwlH0GmOyZh/eyW6lEBgrWwlH0GmOyZh--1--y79tb.jpg?tr=w-1600,c-at_max"
+      width="200px" length="200px">
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup8" class="popup8">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>Fly Like an Eagle:<br>You've visited the Eagle Nebula!</i></h7>
+    <br>
+      <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/E7RBeS43e3oJ0ydJuCIi/E7RBeS43e3oJ0ydJuCIi--1--rjuju.jpg?tr=w-1600,c-at_max"
+      width="200px" length="200px">
+    </p>
+  </div>
+
+  <!--EASTER EGG
+
+    <!-- Pop-up box -->
+  <div id="popup9" class="popup9">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>My Birthday!!</i></h7>
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup10" class="popup10">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>2000 Light Years Away<br>This is the location where Green Day wrote a song about.</h7>
+    <br>
+      <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/QPojilYdklgjupD7OXI7/QPojilYdklgjupD7OXI7--1--ho1f7.jpg?tr=w-1600,c-at_max"
+      width="200px" length="200px">
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup11" class="popup11">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>Welcome To Andromeda<br>You've entered Andromeda, the closest galaxy to the Milky Way.</h7>
+    <br>
+      <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/zkGwbljsKudki3v5I09U/zkGwbljsKudki3v5I09U--1--svow6.jpg?tr=w-1600,c-at_max"
+      width="200px" length="200px">
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup12" class="popup12">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7><b>Chicken Pollux:</b><br>You've reached the brightest star in the Gemini constellation, Pollux</h7>
+    <br>
+      <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/QeKZ5t4aNiZnLH5QACK1/QeKZ5t4aNiZnLH5QACK1--1--c1q49.jpg?tr=w-384,c-at_max"
+      width="200px" length="200px">
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup13" class="popup13">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>Junior Explorer Badge III:<br>10,000 clicks. You're learning very fast</h7>
+    <br>
+      <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/rPAA1Sge8t4S2WW7G0bl/rPAA1Sge8t4S2WW7G0bl--1--i0bny.jpg?tr=w-384,c-at_max"
+      width="200px" length="200px">
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup15" class="popup15">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>Irregular Galaxy:<br>You've reached the Magellanic Clouds. They are two irregular galaxies that orbit the Milky
+      Way.</h7>
+    <br>
+      <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/gTQvfjjoMbgdUEPm7IfI/gTQvfjjoMbgdUEPm7IfI--1--qxnpf.jpg?tr=w-1600,c-at_max"
+      width="200px" length="200px">
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup16" class="popup16">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7><b>Da Big Quasser:</b><br>You've reached Markarian 231. It is a quasser</h7>
+    <br>
+      <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/jp5f9FkOM1BbaLCKMssa/jp5f9FkOM1BbaLCKMssa--1--tzn7c.jpg?tr=w-1600,c-at_max"
+      width="200px" length="200px">
+    </p>
+  </div>
+
+   <!-- Pop-up box -->
+  <div id="popup17" class="popup17">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>Experienced Explorer Badge I:<br>Congrats Explorer!  You've hit 100,000 clicks!</h7>
+    <br>
+      <br>
+    <img src="https://images.nightcafe.studio/jobs/Pd0ivPrqj5k1l64lSO0P/Pd0ivPrqj5k1l64lSO0P--1--k47ad.jpg?tr=w-1600,c-at_max"width="200px" length="200px">
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup18" class="popup18">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>Experienced Explorer Badge II:<br>Congrats Explorer!  You've hit 101,000 clicks!</h7>
+    <br>
+      <br>
+    <img src="https://images.nightcafe.studio/jobs/fA5lbf4xRQHm2dy1qH8s/fA5lbf4xRQHm2dy1qH8s--1--9fqvq.jpg?tr=w-1600,c-at_max"width="200px" length="200px">
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup19" class="popup19">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>Experienced Explorer Badge III:<br>Congrats Explorer!  You've hit 110,000 clicks!</h7>
+    <br>
+      <br>
+    <img src="https://images.nightcafe.studio/jobs/uncNCPM67Ol0WRywEGzT/uncNCPM67Ol0WRywEGzT--1--xrnzu.jpg?tr=w-1600,c-at_max"width="200px" length="200px">
+    </p>
+  </div>
+
+  <!-- Pop-up box -->
+  <div id="popup20" class="popup20">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>You're a Shining Star!:<br>You've reached the star Stephenson 2-18, the largest star known to man</h7>
+    <br>
+      <br>
+    <img src="https://images.nightcafe.studio/jobs/TzhLjP5CRxkapak8YgaL/TzhLjP5CRxkapak8YgaL--1--eeto5.jpg?tr=w-1600,c-at_max"width="200px" length="200px">
+    </p>
+  </div>
+
+  <!--Christmas Event-->
+
+  <!-- Pop-up box -->
+  <div id="popup14" class="popup14">
+    <p>
+    <h3>ACHIEVEMENT UNLOCKED🔑</h3>
+    <h7>MERRY CHRISTMAS:<br>The 12 Days of Christmas</h7>
+    <br>
+      <br>
+    <img
+      src="https://images.nightcafe.studio/jobs/nvdG9gmo4iX6xDqPIUMF/nvdG9gmo4iX6xDqPIUMF--1--sw1q6.jpg?tr=w-1600,c-at_max"
+      width="200px" length="200px">
+  </div>
+
+  <script>
+    // JavaScript
+    let clickCount = 0;
+    const clickButton = document.getElementById('click-button');
+    const clickerCount = document.getElementById('clicker-count');
+
+    clickButton.addEventListener('click', () => {
+      clickCount++;
+      clickerCount.textContent = clickCount;
+    });
+
+    var clickCounter = 0;
+
+    // Function to increment the click counter and show the pop-up
+    function incrementCounter() {
+      clickCounter++;
+      document.getElementById("clickCount").textContent = clickCounter;
+
+      if (clickCounter >= 10101010) {
+        showPopup();
+      }
+
+      if (clickCounter >= 10101011) {
+        stopPopup();
+      }
+
+      if (clickCounter >= 2) {
+        showPopup2();
+      }
+
+      if (clickCounter >= 3) {
+        stopPopup2();
+      }
+
+      if (clickCounter >= 959) {
+        showPopup3();
+      }
+
+      if (clickCounter >= 960) {
+        stopPopup3();
+      }
+
+      if (clickCounter >= 100) {
+        showPopup4();
+      }
+
+      if (clickCounter >= 101) {
+        stopPopup4();
+      }
+
+      if (clickCounter >= 252525) {
+        showPopup5();
+      }
+
+      if (clickCounter >= 252526) {
+        stopPopup5();
+      }
+
+      if (clickCounter >= 1000) {
+        showPopup6();
+      }
+
+      if (clickCounter >= 1001) {
+        stopPopup6();
+      }
+
+      if (clickCounter >= 1500) {
+        showPopup7();
+      }
+
+      if (clickCounter >= 1501) {
+        stopPopup7();
+      }
+
+      if (clickCounter >= 707) {
+        showPopup8();
+      }
+
+      if (clickCounter >= 708) {
+        stopPopup8();
+      }
+
+      if (clickCounter >= 32211) {
+        showPopup9();
+      }
+
+      if (clickCounter >= 32212) {
+        stopPopup9();
+      }
+
+      if (clickCounter >= 202) {
+        showPopup10();
+      }
+
+      if (clickCounter >= 203) {
+        stopPopup10();
+      }
+
+      if (clickCounter >= 256262) {
+        showPopup11();
+      }
+
+      if (clickCounter >= 256263) {
+        stopPopup11();
+      }
+
+      if (clickCounter >= 17) {
+        showPopup12();
+      }
+
+      if (clickCounter >= 18) {
+        stopPopup12();
+      }
+
+      if (clickCounter >= 10000) {
+        showPopup13();
+      }
+
+      if (clickCounter >= 100001) {
+        stopPopup13();
+      }
+
+      if (clickCounter >= 12) {
+        showPopup14();
+      }
+
+      if (clickCounter >= 13) {
+        stopPopup14();
+      }
+
+      if (clickCounter >= 79100) {
+        showPopup15();
+      }
+
+      if (clickCounter >= 79101) {
+        stopPopup15();
+      }
+
+      if (clickCounter >= 60) {
+        showPopup16();
+      }
+
+      if (clickCounter >= 61) {
+        stopPopup16();
+      }
+
+        if (clickCounter >= 100,000) {
+        showPopup17();
+      }
+
+      if (clickCounter >= 100,001) {
+        stopPopup17();
+    }
+
+      if (clickCounter >= 101,000) {
+          showPopup18();
+        }
+
+      if (clickCounter >= 101,001) {
+          stopPopup18();
+      }
+
+      if (clickCounter >= 110,000) {
+          showPopup19();
+        }
+
+        if (clickCounter >= 110,001) {
+          stopPopup19();
+      }
+
+      if (clickCounter >= 1994) {
+          showPopup20();
+        }
+
+        if (clickCounter >= 1995) {
+          stopPopup20();
+      }
+  }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "block";
+      setTimeout(function () {
+        popup.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup() {
+      var popup = document.getElementById("popup");
+      popup.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup2() {
+      var popup2 = document.getElementById("popup2");
+      popup2.style.display = "block";
+      setTimeout(function () {
+        popup2.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup2() {
+      var popup2 = document.getElementById("popup2");
+      popup2.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup3() {
+      var popup3 = document.getElementById("popup3");
+      popup3.style.display = "block";
+      setTimeout(function () {
+        popup3.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup3() {
+      var popup3 = document.getElementById("popup3");
+      popup3.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup4() {
+      var popup4 = document.getElementById("popup4");
+      popup4.style.display = "block";
+      setTimeout(function () {
+        popup4.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup4() {
+      var popup4 = document.getElementById("popup4");
+      popup4.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup5() {
+      var popup5 = document.getElementById("popup5");
+      popup5.style.display = "block";
+      setTimeout(function () {
+        popup5.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup5() {
+      var popup5 = document.getElementById("popup5");
+      popup5.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup6() {
+      var popup6 = document.getElementById("popup6");
+      popup6.style.display = "block";
+      setTimeout(function () {
+        popup6.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup6() {
+      var popup6 = document.getElementById("popup6");
+      popup6.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup7() {
+      var popup7 = document.getElementById("popup7");
+      popup7.style.display = "block";
+      setTimeout(function () {
+        popup7.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup7() {
+      var popup7 = document.getElementById("popup7");
+      popup7.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup8() {
+      var popup8 = document.getElementById("popup8");
+      popup8.style.display = "block";
+      setTimeout(function () {
+        popup8.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup8() {
+      var popup8 = document.getElementById("popup8");
+      popup8.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup9() {
+      var popup9 = document.getElementById("popup9");
+      popup9.style.display = "block";
+      setTimeout(function () {
+        popup9.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup9() {
+      var popup9 = document.getElementById("popup9");
+      popup9.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup10() {
+      var popup10 = document.getElementById("popup10");
+      popup10.style.display = "block";
+      setTimeout(function () {
+        popup10.style.display = "none";
+      }, 5000); // 5000 milliseconds = 6 seconds
+    }
+
+    function stopPopup10() {
+      var popup10 = document.getElementById("popup10");
+      popup10.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup11() {
+      var popup11 = document.getElementById("popup11");
+      popup11.style.display = "block";
+      setTimeout(function () {
+        popup11.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup11() {
+      var popup11 = document.getElementById("popup11");
+      popup11.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup12() {
+      var popup12 = document.getElementById("popup12");
+      popup12.style.display = "block";
+      setTimeout(function () {
+        popup12.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup12() {
+      var popup12 = document.getElementById("popup12");
+      popup12.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup13() {
+      var popup13 = document.getElementById("popup13");
+      popup13.style.display = "block";
+      setTimeout(function () {
+        popup13.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup13() {
+      var popup13 = document.getElementById("popup13");
+      popup13.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup14() {
+      var popup14 = document.getElementById("popup14");
+      popup14.style.display = "block";
+      setTimeout(function () {
+        popup14.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup14() {
+      var popup14 = document.getElementById("popup14");
+      popup14.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup15() {
+      var popup15 = document.getElementById("popup15");
+      popup15.style.display = "block";
+      setTimeout(function () {
+        popup15.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup15() {
+      var popup1 = document.getElementById("popup15");
+      popup15.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup16() {
+      var popup16 = document.getElementById("popup16");
+      popup16.style.display = "block";
+      setTimeout(function () {
+        popup16.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup16() {
+      var popup16 = document.getElementById("popup16");
+      popup16.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup17() {
+      var popup17 = document.getElementById("popup17");
+      popup17.style.display = "block";
+      setTimeout(function () {
+        popup17.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup17() {
+      var popup17 = document.getElementById("popup17");
+      popup17.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup18() {
+      var popup18 = document.getElementById("popup18");
+      popup18.style.display = "block";
+      setTimeout(function () {
+        popup18.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup18() {
+      var popup18 = document.getElementById("popup18");
+      popup18.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup19() {
+      var popup19 = document.getElementById("popup19");
+      popup19.style.display = "block";
+      setTimeout(function () {
+        popup19.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup19() {
+      var popup19 = document.getElementById("popup19");
+      popup19.style.display = "none";
+    }
+
+    // Function to show the pop-up box and hide it after 3 seconds
+    function showPopup20() {
+      var popup20 = document.getElementById("popup20");
+      popup20.style.display = "block";
+      setTimeout(function () {
+        popup20.style.display = "none";
+      }, 4000); // 4000 milliseconds = 5 seconds
+    }
+
+    function stopPopup20() {
+      var popup20 = document.getElementById("popup20");
+      popup20.style.display = "none";
+    }
+
+    function howTo() {
+      document.getElementById("demo2").innerHTML = "Click the button that says 9.9 billion light years.  Click it as many times as you can.  Try and collect acheivements along the way, even travel farther than any human has ever been!"
+    }
+
+  </script>
+
+  <h8>version 1.2.64</h8>
+
+</body>
+
+</html>
