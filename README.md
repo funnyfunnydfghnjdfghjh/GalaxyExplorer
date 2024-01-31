@@ -15,7 +15,7 @@ Welcome to the Galaxy Explorer Clicker Game repository! This simple and addictiv
 
 ## Introduction
 
-**Galaxy Explorer** is a collaborative project created by [Your Name] and [Friend's Name]. We wanted to develop a casual and enjoyable game that captures the excitement of exploring the unknown in the vastness of space.
+**Galaxy Explorer** is a collaborative project created by Me and My Friend. We wanted to develop a casual and enjoyable game that captures the excitement of exploring the unknown in the vastness of space.
 
 ## Features
 
